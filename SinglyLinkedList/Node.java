@@ -1,4 +1,4 @@
-package list;
+package SinglyLinkedList;
 
 public class Node {
 	Node next;
