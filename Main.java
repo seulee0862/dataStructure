@@ -1,17 +1,25 @@
 import ArrayStack.ArrayStack;
+import CircleQueue.CircleQueue;
 import DoublyLinkedList.DoublyLinkedList;
 
 public class Main
 {
 	public static void main(String[] args) 
 	{
-		ArrayStack arrayStack = new ArrayStack(4);
-		System.out.println(arrayStack.isEmpty());
-		arrayStack.push("C");
-		arrayStack.push("B");
-		System.out.println(arrayStack.peek());
-		System.out.println(arrayStack.pop());
-		System.out.println(arrayStack.toString());
-		System.out.println(arrayStack);
+		CircleQueue circleQueue = new CircleQueue(3);
+		circleQueue.add(1);
+		System.out.println(circleQueue.poll());
+		circleQueue.add(3);
+		System.out.println(circleQueue.peek());
+		System.out.println(circleQueue.poll());
+		System.out.println(circleQueue.peek());
+		circleQueue.add(1);
+		circleQueue.add(2);
+		circleQueue.add(3);
+		circleQueue.add(4);
+		circleQueue.add(5);
+		circleQueue.add(6);
+		
+		System.out.println(circleQueue.toString());
 	}
 }
