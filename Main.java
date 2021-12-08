@@ -1,25 +1,29 @@
 import ArrayStack.ArrayStack;
-import CircleQueue.CircleQueue;
-import DoublyLinkedList.DoublyLinkedList;
+import LinkedQueue.LinkedQueue;
+import NormalTree.NormalTree;
 
 public class Main
 {
 	public static void main(String[] args) 
 	{
-		CircleQueue circleQueue = new CircleQueue(3);
-		circleQueue.add(1);
-		System.out.println(circleQueue.poll());
-		circleQueue.add(3);
-		System.out.println(circleQueue.peek());
-		System.out.println(circleQueue.poll());
-		System.out.println(circleQueue.peek());
-		circleQueue.add(1);
-		circleQueue.add(2);
-		circleQueue.add(3);
-		circleQueue.add(4);
-		circleQueue.add(5);
-		circleQueue.add(6);
+		NormalTree normalTree = new NormalTree();
+		normalTree.add(1);
+		normalTree.add(2);
+		normalTree.add(3);
+		normalTree.add(4);
+		normalTree.add(5);
+		normalTree.add(6);
+		normalTree.add(7);
+		normalTree.add(8);
+		normalTree.add(9);
+		normalTree.add(10);
+		normalTree.add(11);
+		normalTree.add(12);
 		
-		System.out.println(circleQueue.toString());
+		
+		normalTree.printTree();
+		System.out.println("traversal");
+		normalTree.levelOrder();
 	}
+	
 }
