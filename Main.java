@@ -1,29 +1,22 @@
-import ArrayStack.ArrayStack;
-import LinkedQueue.LinkedQueue;
-import NormalTree.NormalTree;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import BinarySearchTree.BinarySearchTree;
+
+
+
 
 public class Main
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception 
 	{
-		NormalTree normalTree = new NormalTree();
-		normalTree.add(1);
-		normalTree.add(2);
-		normalTree.add(3);
-		normalTree.add(4);
-		normalTree.add(5);
-		normalTree.add(6);
-		normalTree.add(7);
-		normalTree.add(8);
-		normalTree.add(9);
-		normalTree.add(10);
-		normalTree.add(11);
-		normalTree.add(12);
-		
-		
-		normalTree.printTree();
-		System.out.println("traversal");
-		normalTree.levelOrder();
+		BinarySearchTree binarySearchTree = new BinarySearchTree();
+		binarySearchTree.add(5);
+		binarySearchTree.add(2);
+		binarySearchTree.add(4);
+		binarySearchTree.add(3);
+		binarySearchTree.add(1);
+		binarySearchTree.printTree();
 	}
-	
 }

@@ -1,4 +1,4 @@
-package NormalTree;
+package Tree_DFS;
 
 public class Node 
 {
